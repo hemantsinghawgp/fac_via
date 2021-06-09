@@ -1,0 +1,1337 @@
+<!--   <link rel="stylesheet" href="../../cdn.datatables.net/1.10.20/css/dataTables.bootstrap.min.css">
+
+<link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ <script src="../../ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="../../maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
+<!-- <title>Support to IITR Faculty for Visiting Abroad</title> -->
+<!-- <style>
+  .center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+
+p, button{
+    float: center;
+    margin: 0;
+    padding-right: 10px;
+	
+}
+
+#frameone{
+border-style: inset;
+border-color: #2D52DF;
+border-width: 14px;
+}
+
+.close {
+	padding-right:7px;padding-top:5px;
+}
+span {
+	color:red;
+}
+</style> -->
+<!-- !DOCTYPE html>
+<html lang="en"> -->
+  
+<!-- Mirrored from awards.iitr.ac.in/fac_via/faculty_via.php by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 06 Jun 2021 06:34:04 GMT -->
+<!-- Added by HTTrack -->
+<!-- <meta http-equiv="content-type" content="text/html;charset=UTF-8" />< -->
+<!-- <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <!--   <meta name="description" content="">
+    <meta name="author" content="Arjun Mehta">
+    <link rel="shortcut icon" type="image/x-icon" href="http://awards.iitr.ac.in/scholarship/images/favicon.ico">
+    <title>
+        </title>
+ -->
+    <!-- Bootstrap core CSS -->
+<!--     <link href="../scholarship/css/bootstrap.min.css" rel="stylesheet">
+  -->
+    <!-- Bootstrap theme -->
+  <!--   <link href="../scholarship/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="../scholarship/css/font-awesome.min.css" rel="stylesheet" />
+     <link href="css/style.css" rel="stylesheet"> -->
+ <!--    <script src="../../cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.2/moment.min.js"></script>
+    <link href="../../cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.css" rel="stylesheet"/>   -->
+    <!-- Custom styles for this template -->
+  <!--   <link href="../scholarship/css/theme.css" rel="stylesheet">    --> 
+
+    <!-- new  form -->
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="Hemant Singh">
+      <title>Support for IITR Faculty for Visiting Abroad </title>
+      <!-- CSS -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/style_new.css" rel="stylesheet">
+      <link href="css/bootstrap-datetimepicker.css" rel="stylesheet">
+      <!-- FONT -->
+      <link href="https://fonts.gstatic.com" rel="preconnect">
+      <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+      
+   </head>
+   <body>
+    <div class="logo-div" align="center">
+          <div class="ui container">
+            <a href="http://awards.iitr.ac.in/scholarship/">
+              <img src="../scholarship/images/logo.png" alt="" class="logo" style="width: 320px;
+    margin: 10px;">
+            </a>
+          </div>
+        </div>
+
+
+
+
+     <div class="container d-flex align-items-center min-vh-100">
+   <div class="row g-0 justify-content-center">
+      <!-- TITLE -->
+      <div class="col-lg-4 offset-lg-1 mx-0 px-0">
+        <div id="title-container">
+      <img class="faculty-image" src="img/faculty.png">
+      <h2>Faculty </h2>
+      <h3>Application Form</h3>
+      <p>To Support IITR Faculty for Visiting Institutions Abroad </p>
+   </div>
+      </div>
+      <!-- FORMS -->
+ <div class="col-lg-7 mx-0 px-0">
+    <div class="progress">
+      <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="50" class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar" style="width: 0%"></div>
+   </div>
+  <div id="qbox-container">
+    <form class="needs-validation" id="form-wrapper" method="post" name="form-wrapper" novalidate>
+         <!-- STEPS HERE -->
+       <div id="steps-container">
+             
+            <div class="step ml-3">
+               <h4>1. Basic Details/ Personal Information </h4>
+               <div class="mt-1">
+                  <label class="form-label">Name of Faculty:</label> 
+                  <input class="form-control" id="fac_name" name="fac_name" type="text" value="" required>
+               </div>
+                <div class="mt-2">
+                  <label class="form-label">Employee Code:</label> 
+                  <input class="form-control" id="empcode" name="empcode" type="text" value="" required>
+               </div>
+               <div class="mt-2">
+                  <label class="form-label">Dept./Center</label> 
+                  <input class="form-control" id="depart_name" name="depart_name" type="text" value="" required>
+               </div>
+                <div class="mt-2">
+                  <label class="form-label">Phone / Mobile Number:</label> 
+                  <input class="form-control" id="fac_phoneno" name="fac_phoneno" type="text" pattern="\d{10}" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" minlength="10" maxlength="10"  value="" required />
+               </div>
+                <div class="mt-2">
+                  <label class="form-label">Email:</label> 
+                  <input class="form-control" id="fac_email" name="fac_email" type="email" value="" required>
+               </div>
+              
+
+              <!--  <div class="form-check ps-0 q-box">
+                  <div class="q-box__question">
+                     <input class="form-check-input question__input" id="q_1_yes" name="q_1" type="radio" value="Yes"> 
+                     <label class="form-check-label question__label" for="q_1_yes">Yes</label>
+                  </div>
+                  <div class="q-box__question">
+                     <input checked class="form-check-input question__input" id="q_1_no" name="q_1" type="radio" value="No"> 
+                     <label class="form-check-label question__label" for="q_1_no">No</label>
+                  </div>
+               </div> -->
+            </div>
+            <div class="step ml-5">
+               <h4>2. Purpose of Visit </h4>
+                <div class="mt-2">
+                  <input class="form-control" id="purpose_name" name="purpose_name" type="text" value="" required>
+               </div>
+                 <div class="mt-2">
+                  <label class="form-label">(a) Duration (with dates):</label> 
+                  <input class="form-control" id="duration" name="duration" type="text" value="" required>
+               </div>
+               <div class="mt-2">
+                  <label class="arrival" class="control-label col-lg-2">Start:</label>
+                  <input class="form-control" id="s_date" name="s_date" type="date" value="" required>
+                </div>
+                <div class="mt-2">  
+                  <label for="departure" class="control-label">End:</label>
+                  <input class="form-control" id="e_date" name="e_date" type="date" value="" required>
+               </div>
+
+               </div> 
+
+
+                <div class="step ml-4">
+               <h4>3. Details of the Institution to be visited </h4>
+                <div class="mt-2">
+                  <label class="form-label">(a) Name of Institution:</label> 
+                  <input class="form-control" id="ins" name="ins" type="text" value="" required>
+               </div>
+                 <div class="mt-2">
+                  <label class="form-label">(b) Department:</label> 
+                  <input class="form-control" id="depart_ins" name="depart_ins" type="text" value="" required>
+               </div>
+               <div class="mt-2">
+                  <label class="form-label">(c) QS World university ranking/subject ranking:</label> 
+                  <input class="form-control" id="qs" name="qs" type="text" value="" required>
+               </div>
+               </div>
+
+               <div class="step ml-4">
+               <h4>4. Estimated total expenditure </h4>
+                <div class="mt-2">
+                  <label class="form-label">Total(in Rupees):</label> 
+                  <input class="form-control" id="total" name="total" type="text" value="" required>
+               </div>
+                 <div class="mt-2">
+                  <label class="form-label">(a) Air Fare (in Rupees):</label> 
+                  <input class="form-control" id="afare" name="afare" type="text" value="" required>
+               </div>
+               <div class="mt-2">
+                  <label class="form-label">(b) Insurance (in Rupees):</label> 
+                  <input class="form-control" id="insur" name="insur" type="text" value="" required>
+               </div>
+                <div class="mt-2">
+                  <label class="form-label">(c) Visa Fee (in Rupees):</label> 
+                  <input class="form-control" id="visa" name="visa" type="text" value="" required>
+               </div>
+                <div class="mt-2">
+                  <label class="form-label">(d) Living Expenses (in Rupees):</label> 
+                  <input class="form-control" id="live" name="live" type="text" value="" required>
+               </div>
+               </div> 
+
+
+              <div class="step ml-4">
+               <h4>5. Other Details </h4>
+               
+                 <div class="mt-2">
+                  <label class="form-label">(a) Total Funding available from the host institute and other sources(in Rupees): 
+                  </label> 
+                  <input class="form-control" id="fund" name="fund" type="text">
+               </div>
+               <div class="mt-2">
+                  <label class="form-label">(b) Gap between Estimated expenditure and the total funds available from host institute and other sources: </label> 
+                  <input class="form-control" id="gap" name="gap" type="text">
+               </div>
+               </div> 
+
+               <div class="step ml-4">
+               <h4>6. Documents Upload </h4>
+               
+                 <div class="mt-2">
+                   <label class="form-label">Offer Letter Attached:</label> 
+                  <div class="custom-file">
+                    
+                    <label class="custom-file-label" for="customFile">Choose file...</label>
+                   <input class="form-control" id="file_upload" name="file_upload" onchange="return validateFileExtension(this)" type="file"  required />
+                  </div>
+               </div>
+               
+               </div> 
+              <!--  <div class="form-check ps-0 q-box">
+                  <div class="q-box__question">
+                     <input class="form-check-input question__input" id="q_2_yes" name="q_2" type="radio" value="Yes"> 
+                     <label class="form-check-label question__label" for="q_2_yes">Yes</label>
+                  </div>
+                  <div class="q-box__question">
+                     <input checked class="form-check-input question__input" id="q_2_no" name="q_2" type="radio" value="No"> 
+                     <label class="form-check-label question__label" for="q_2_no">No</label>
+                  </div>
+               </div> -->
+           
+          <!--   <div class="step">
+               <h4>Are you having diarrhoea, stomach pain, conjunctivitis, vomiting and headache?</h4>
+               <div class="form-check ps-0 q-box">
+                  <div class="q-box__question">
+                     <input class="form-check-input question__input" id="q_3_yes" name="q_3" type="radio" value="Yes"> 
+                     <label class="form-check-label question__label" for="q_3_yes">Yes</label>
+                  </div>
+                  <div class="q-box__question">
+                     <input checked class="form-check-input question__input" id="q_3_no" name="q_3" type="radio" value="No"> 
+                     <label class="form-check-label question__label" for="q_3_no">No</label>
+                  </div>
+               </div>
+            </div> -->
+<!--             <div class="step">
+               <h4>Have you traveled to any of these countries with the highest number of COVID-19 cases in the world for the past 2 weeks?</h4>
+               <div class="row">
+                  <div class="col-lg-6">
+                     <div class="form-check ps-0 q-box">
+                        <div class="q-box__question">
+                           <input class="form-check-input question__input q-checkbox" id="q_4_uk" name="q_4" type="checkbox" value="uk"> 
+                           <label class="form-check-label question__label" for="q_4_uk">UK</label>
+                        </div>
+                     </div>
+                     <div class="form-check ps-0 q-box">
+                        <div class="q-box__question">
+                           <input class="form-check-input question__input" id="q_4_us" name="q_4" type="checkbox" value="us"> 
+                           <label class="form-check-label question__label" for="q_4_us">US</label>
+                        </div>
+                     </div>
+                     <div class="form-check ps-0 q-box">
+                        <div class="q-box__question">
+                           <input class="form-check-input question__input" id="q_4_br" name="q_3" type="checkbox" value="br"> 
+                           <label class="form-check-label question__label" for="q_4_br">Brazil</label>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-6">
+                     <div class="form-check ps-0 q-box">
+                        <div class="q-box__question">
+                           <input class="form-check-input question__input" id="q_4_de" name="q_4" type="checkbox" value="de"> 
+                           <label class="form-check-label question__label" for="q_4_de">Germany</label>
+                        </div>
+                     </div>
+                     <div class="form-check ps-0 q-box">
+                        <div class="q-box__question">
+                           <input class="form-check-input question__input" id="q_4_in" name="q_4" type="checkbox" value="in"> 
+                           <label class="form-check-label question__label" for="q_4_in">India</label>
+                        </div>
+                     </div>
+                     <div class="form-check ps-0 q-box">
+                        <div class="q-box__question">
+                           <input class="form-check-input question__input" id="q_4_eu" name="q_4" type="checkbox" value="eu"> 
+                           <label class="form-check-label question__label" for="q_4_eu">Europe</label>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-12">
+                     <div class="form-check ps-0 q-box">
+                        <div class="q-box__question">
+                           <input class="form-check-input question__input" id="q_4_none" name="q_4" type="checkbox" value="none"> 
+                           <label class="form-check-label question__label" for="q_4_none">I did not travelled to any of these countries</label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div> -->
+            <!-- <div class="step">
+               <h4>Are you experiencing any of these serious symptoms of COVID-19 below?</h4>
+               <div class="row">
+                  <div class="form-check ps-0 q-box">
+                     <div class="q-box__question">
+                        <input class="form-check-input question__input" id="q_5_breathing" name="q_5_breathing" type="checkbox" value="breathing"> 
+                        <label class="form-check-label question__label" for="q_5_breathing">Difficulty breathing or shortness of breath</label>
+                     </div>
+                  </div>
+                  <div class="form-check ps-0 q-box">
+                     <div class="q-box__question">
+                        <input class="form-check-input question__input" id="q_5_chest" name="q_5_chest" type="checkbox" value="chest pain"> 
+                        <label class="form-check-label question__label" for="q_5_chest">Chest pain or pressure</label>
+                     </div>
+                  </div>
+                  <div class="form-check ps-0 q-box">
+                     <div class="q-box__question">
+                        <input class="form-check-input question__input" id="q_5_speech" name="q_5_speech" type="checkbox" value="speech problem"> 
+                        <label class="form-check-label question__label" for="q_5_speech">Loss of speech or movement</label>
+                     </div>
+                  </div>
+                  <div class="form-check ps-0 q-box">
+                     <div class="q-box__question">
+                        <input class="form-check-input question__input" id="q_5_pale" name="q_5_pale" type="checkbox" value="pale"> 
+                        <label class="form-check-label question__label" for="q_5_pale">Pale, gray or blue-colored skin, lips or nail beds</label>
+                     </div>
+                  </div>
+               </div>
+            </div> -->
+            <div class="step ml-3">
+               <h4>7. Details of Bank Account:</h4>
+               <div class="mt-1">
+                  <label class="form-label">(a) Name as in Account:</label> 
+                  <input class="form-control" id="aname" name="aname" type="text" value="" required>
+               </div>
+                 <div class="mt-2">
+                  <label class="form-label">(b) Account No.:</label> 
+                  <input class="form-control" id="ano" name="ano" type="number" pattern="\d{11}" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" minlength="11" maxlength="11" value="" required>
+               </div>
+               <div class="mt-2">
+                  <label class="form-label">(c) Bank's Name & Branch:</label> 
+                  <input class="form-control" id="bank" name="bank" type="text">
+               </div>
+                 <div class="mt-2">
+                  <label class="form-label">(d) IFSC Code:</label> 
+                  <input class="form-control" id="ifsc" name="ifsc" type="text">
+               </div>
+
+               <div class="mt-3">
+               <div class="form-check ps-0 q-box">
+                     <div class="q-box__question">
+                        <input class="form-check-input question__input" id="q_5_pale" name="q_5_pale" type="checkbox" value="pale"> 
+                        <label class="form-check-label question__label" for="q_5_pale"> I declare that the information furnished above is correct. </label>
+                     </div>
+                </div>  
+               </div>
+              
+              
+      <!--          <div class="row mt-2">
+                  <div class="col-lg-2 col-md-2 col-3">
+                     <label class="form-label">Age:</label>
+                     <div class="input-container">
+                        <input class="form-control" id="age" name="age" type="text">
+                     </div>
+                  </div>
+                  <div class="col-lg-8">
+                     <div id="input-container">
+                        <input class="form-check-input" name="gender" type="radio" value="male"> 
+                        <label class="form-check-label radio-lb">Male</label> 
+                        <input class="form-check-input" name="gender" type="radio" value="female"> 
+                        <label class="form-check-label radio-lb">Female</label> 
+                        <input checked class="form-check-input" name="gender" type="radio" value="undefined"> 
+                        <label class="form-check-label radio-lb">Rather not say</label>
+                     </div>
+                  </div>
+               </div> -->
+            </div>
+            <div class="step">
+               <div class="mt-1">
+                  <div class="closing-text">
+                     <h4>Note</h4>
+                     <p>After submitting the online application, please take a printout, get it signed by <b>Head of the Department/Centre</b> and submit same to DORA Office.</p>
+                     <p>Click on the save button to continue.</p>
+                     <button class="btn btn-primary sub" style="font-size:15px;height:50px;width:90px;" type=" submit" name="via_save">Save</button> 
+                  </div>
+               </div>
+            </div>
+            <div id="success">
+               <div class="mt-5">
+                  <h4>Thank you</h4>
+                  <p>Your form is successfully submitted.</p>
+                <a href="" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Print Preview </a>
+                <div class="mt-5"></div>
+                  <p>If you want to edit application, please click the below link.</p>
+                  <a class="back-link" href="">Edit Application ➜</a>
+               </div>
+            </div>
+         </div>
+         <div id="q-box__buttons">
+            <button id="prev-btn" type="button">Previous</button> 
+            <button id="next-btn" type="button">Next</button> 
+            <button id="submit-btn" type="submit">Submit</button>
+         </div>   
+   </form>
+  </div>
+</div> 
+
+
+<div id="preloader-wrapper">
+   <div id="preloader"></div>
+   <div class="preloader-section section-left"></div>
+   <div class="preloader-section section-right"></div>
+</div>
+
+      <script src="js/script.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
+
+
+
+    
+
+    <!-- <h1>Awards</h1>     -->
+    <!-- <a href="/">
+          <img src="http://awards.iitr.ac.in/scholarship//images/logo.png" alt="" class="logo">
+        </a> -->
+        <!-- <div class="logo-div">
+          <div class="ui container">
+            <a href="http://awards.iitr.ac.in/scholarship/">
+              <img src="../scholarship/images/logo.png" alt="" class="logo" style="width: 320px;
+    margin: 10px;">
+            </a>
+          </div>
+        </div>
+    ﻿<div id="my-bootstrap-menu" class="navbar navbar-default " role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+       
+           <a class="navbar-brand" href="#">Brand</a> -->
+           <!--  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+            </button>
+        </div>
+ -->
+
+        <!-- <div class="collapse navbar-collapse navbar-menubuilder">
+            <ul class="nav navbar-nav navbar-left">
+            <li class='home'><a href="https://alumni.iitr.ac.in/"><img src="../scholarship/images/home.png"></a></li> -->
+           <!-- <li class=><a href="http://awards.iitr.ac.in/scholarship/scholarship.php"> Scholarship</a></li>-->
+                      <!--       </ul>
+
+
+ <ul class="nav navbar-nav navbar-left"> --> 
+               <!-- <li class=><a href="http://awards.iitr.ac.in/scholarship/about.php">Current Awards and Scholarship</a></li>-->
+               <!--  </ul>
+ -->
+           
+ 
+ 
+            
+
+         
+           
+
+           <!-- 
+            <ul class="nav navbar-nav navbar-right">
+                               
+                    <li class=> --><!--<a href="http://awards.iitr.ac.in/scholarship/login1.php">Log in</a>--><!-- </li> -->                
+   <!--                          </ul> 
+        </div>
+    </div>
+</div>
+
+ -->
+
+
+<!-- 
+    <div id="upload_div" class="container" role="main" style="width:80%;"> -->
+
+                                                    
+        
+        
+                        
+
+         
+      
+    <!-- 
+      <div class="row" >
+        <div class="col-lg-12">
+          <section class="panel">
+              <header class="panel-heading">
+                
+                <h4 style="text-align:center;font-weight:bold;font-size:16px;">INDIAN INSTITUTE OF TECHNOLOGY ROORKEE<br><br>Application Form to Support for IITR Faculty for Visiting Institutions Abroad </h4> -->
+                <!--<marquee><span style="font-size:18px;color:#d9534f;font-weight: 800;">Last date of receiving application is 11th Febuary, 2020</span></marquee>-->
+                <!-- <span class="blink_me centered last_date">Last date of submission 1st January, 2019</span> -->
+       <!--        </header>
+          </section>  
+        </div>
+        
+      </div> -->
+
+      
+	  
+	  
+	<!--   
+	  <br>
+       <a style="float: right;" href="login/login.html" target="_blank">Edit the Application</a>
+      <p style="color:red;">All asterisk (*) maked fileds are mandatory</p> 
+           <div id="frameone" class="row" style="background-color:#E7EBFA;padding:20px 0px;width:fixed;"> -->
+      
+
+
+    <!-- new form starts here-->
+
+
+    <!--new form ends here -->
+
+        <!-- <div class="col-lg-12">
+          <div class="panel-body">
+                 <form style="font-size:11px;" class="form-validate form-horizontal" id="scholarship_form" method="POST" action="#" enctype="multipart/form-data">
+                    <div class="col-lg-12">
+					 
+                         <div class="form-group"> -->
+						 <!--<input type="text" id="id" name="id" style="visibility:hidden;" value="<br />
+<b>Warning</b>:  Undefined variable $id in <b>C:\xampp\htdocs\fac_via\faculty_via.php</b> on line <b>274</b><br />
+">-->
+           <!--   <div class="form-group">
+            <label for="Idetails" class="control-label col-lg-7" style="font-size: small; text-align:left;">1. Basic Details </label>
+            </div>
+			
+			         <div class="inner-wrap row">
+					     <div class="row">
+              
+                            <div class="col-md-6">   
+                                <label for="fname"> (a) Name of Faculty: <span class="">*</span></label>							
+                              <input class="form-control" id="fac_name" name="fac_name" type="text" value="" required  />
+                             <input class="form-control" id="user_id" name="user_id" type="hidden" value=""  /> 
+                            </div>
+           
+                            
+                             
+                             <div class="col-md-6">   
+                             <label for="empcode">(b) Employee Code: <span class="">*</span> </label>							 
+                              <input class="form-control" id="empcode" name="empcode" type="number"  value="" required />
+                            </div> 
+
+
+                         </div>
+						 <br>
+						<div class="row">
+                             -->
+                            <!-- <div class="col-md-6">  
+                               <label for="depart" >(c) Dept./Centre: <span class="">*</span></label>							
+                              <input class="form-control" id="depart_name" name="depart_name" type="text" value="" required />
+                            </div>
+                            
+
+                            <div class="col-md-6"> 
+                               <label for="mob" >(d) Mobile No.: <span class="">*</span></label>                            
+                              <input class="form-control" id="fac_phoneno" name="fac_phoneno" type="text" pattern="\d{10}" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" minlength="10" maxlength="10"  value="" required />
+                            </div>
+                            
+                        </div>  
+						<br>
+
+                        <div class="row">
+                             
+                            <div class="col-md-6">  
+                                <label for="email" >(e) Email Address: <span class="">*</span></label>							
+                              <input class="form-control" id="fac_email" name="fac_email" type="email" value="" required />
+                            </div> 
+                            
+
+                        </div>
+					</div>	
+							<br>
+						
+				 
+				 
+				 <hr style="border: 1px solid blue;">
+						<div class="form-group">
+						<label for="pur" class="control-label col-lg-4" style="font-size:small;text-align:left;">2. Purpose of Visit </label>	 
+                         
+						</div>
+				    <div class="inner-wrap row">
+                            <div class="row">
+							    <div class="col-md-6"> 
+									 <input class="form-control" id="purpose_name" name="purpose_name" type="text" value="" required />
+                           								
+							    </div> 
+									
+									 
+					        </div>
+							
+						<br><br>						
+							
+					    <div class="row">
+						    <div class="col-md-6"> 
+							<label for="duration"> (a) Duration (with dates): <span class="">*</span></label>
+							   <input placeholder="No. of weeks" class="form-control" style="margin-left: 5px;"id="duration" name="duration" type="text" value="" required />
+					        </div>
+						 
+						</div>
+						 <br>
+
+                          
+						
+						<div class="form-group" style="margin-left: 20px;">
+                            <label for="arrival" class="control-label col-lg-2"style="margin-left: -20px;">Start: <span class="">*</span></label>
+                            <div class="col-lg-3">                             
+                              <input class="form-control" id="s_date" name="s_date" type="date" value="" required  />
+                            </div> 
+                            <label for="departure" class="control-label col-lg-2"style="margin-left: -30px;">End: <span class="">*</span></label>
+                            <div class="col-lg-3">                             
+                              <input class="form-control" id="e_date" name="e_date" type="date" value="" required />
+                            </div>
+                        </div> 
+					</div>	
+
+
+                    
+                        <hr style="border: 1px solid blue;">
+				
+					    <div class="form-group">
+							<label for="pur" class="control-label col-lg-4" style="font-size:small;text-align:left;">3. Details of the Institution to be visited</label>	 
+                        </div>
+					<div class="inner-wrap row">	
+                         <div class="row">
+                            
+                            <div class="col-md-6">       
+                             <label for="ins">(a) Name of Institution: <span class="">*</span></label>							
+                              <input class="form-control" id="ins" name="ins" type="text" value="" required  />
+                            </div> 
+                           
+                            <div class="col-md-6">  
+                               <label for="depart_ins">(b) Department: <span class="">*</span></label>							
+                              <input class="form-control" id="depart_ins" name="depart_ins" type="text" value="" required  />
+                            </div>
+                        </div> 	
+                           <br>
+                        <div class="row">
+                            
+                            <div class="col-md-6">  
+                                <label for="qs">(c) QS World university ranking/subject ranking: <span class="">*</span></label>							
+                              <input class="form-control" id="qs" name="qs" type="text" value=""  required />
+                            </div> 
+                            
+                           
+                        </div> 						
+					</div>
+
+					 
+						  
+						<hr style="border: 1px solid blue;">						
+                        
+                        <div class="form-group">
+						<label for="fund" class="control-label col-lg-6" style="font-size: small;text-align:left;">4. Estimated total expenditure </label>
+						</div>
+					<div class="inner-wrap row">	
+						<div class="row">
+                            <div class="col-md-6">     
+                            <label for="total" style="font-size: small;">Total (Rs.): <span class="">*</span></label>                        
+                              <input class="form-control" id="total" name="total" type="text" value="" required  />
+                            </div> 
+                           
+                        </div> 
+                        <br>
+
+                        <div class="row">
+                            
+                            <div class="col-md-6">   
+                               <label for="afare">(a) Air fare (Rs.): <span class="">*</span></label>							
+                              <input class="form-control" id="afare" name="afare" type="text" value="" required />
+                            </div> 
+                            
+                            <div class="col-md-6"> 
+                               <label for="ins">(b) Insurance (Rs.): <span class="">*</span></label>                            
+                              <input class="form-control" id="insur" name="insur" type="text" value="" required />
+                            </div>
+                        </div> 	
+                         <br>  
+                        <div class="row">
+                            
+                            <div class="col-md-6">    
+                              <label for="visa" >(c) Visa fee (Rs.): <span class="">*</span></label>							
+                              <input class="form-control" id="visa" name="visa" type="text" value="" required />
+                            </div> 
+                           
+                            <div class="col-md-6">     
+                                <label for="live">(d) Living Expenses (Rs.): <span class="">*</span></label>							
+                              <input class="form-control" id="live" name="live" type="text" value="" required />
+                            </div>
+                        </div>
+                    </div>						
+						  
+						   <hr style="border: 1px solid blue;">
+						<div class="form-group">
+						<label for="fund" class="control-label col-lg-6" style="font-size: small;text-align:left;">5. Other Details </label>
+						</div>
+						
+						<div class="form-group">
+                        <label for="fund" class="control-label col-lg-6" style="font-size: small;text-align:left;">(a) Total Funding available from the host institute and other sources: Rs. </label>
+                            <div class="col-lg-6">                             
+                              <textarea class="form-control" id="fund" name="fund" type="text" value="" required /></textarea>
+                            </div> 
+							
+							
+						<label for="gap" class="control-label col-lg-6" style="font-size: small;text-align:left;"> (b) Gap between Estimated expenditure and the total funds available from host institute and other sources:  </label>
+                            <div class="col-lg-6">                             
+                              <textarea class="form-control" id="gap" name="gap" type="text" value="" required /></textarea>
+                            </div> 
+                        </div>
+						
+
+                        <br>
+                      
+						<hr style="border: 1px solid blue;">
+						<div class="form-group">
+						<label for="Idetails" class="control-label col-lg-7" style="font-size: small;">6. Documents Upload </label>
+						</div>					   
+					
+
+						
+            <div class="inner-wrap row">
+                        <div class="row">
+                  <div class="col-md-6">  
+                        <label for="o_letter">  Offer Letter Attached <span class="">*</span></label>
+                         
+                            <input class="form-control" id="file_upload" name="file_upload" onchange="return validateFileExtension(this)" type="file"  required />
+                                                  </div> 
+                        
+                        </div>
+						<br>
+						
+			</div>
+			
+			
+			        <hr style="border: 1px solid blue;">
+                            <div class="form-group">
+							<label for="fac_details" class="control-label col-lg-4" style="font-size:small;text-align:left;">7. Details of Bank Account </label>
+					        </div>
+			<div class="inner-wrap row">
+
+                    <div class="row">
+                            
+                            <div class="col-md-6">       
+                             <label for="aname">(a) Name as in Account: <span class="">*</span></label>							
+                              <input class="form-control" id="aname" name="aname" type="text" value="" required  />
+                            </div> 
+                           
+                            <div class="col-md-6">  
+                               <label for="ano">(b) Account No.: <span class="">*</span></label>							
+                              <input class="form-control" id="ano" name="ano" type="number" pattern="\d{11}" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" minlength="11" maxlength="11" value="" required />
+                            </div>
+                        </div> 	
+                           <br>
+                        <div class="row">
+                            
+                            <div class="col-md-6">  
+                                <label for="bank">&nbsp;(c) Bank's Name & Branch: <span class="">*</span></label>							
+                              <input class="form-control" id="bank" name="bank" type="text" value="" required />
+                            </div> 
+                            
+                            <div class="col-md-6"> 
+                              <label for="ifsc">(d) IFSC Code: <span class="">*</span></label>                            
+                              <input class="form-control" id="ifsc" name="ifsc" type="text" value="" required />
+                            </div>
+                        </div> 	
+			</div>
+			
+							
+			
+			         <hr style="border: 1px solid blue;">
+						<div class="form-group">
+						<label for="fac_details" class="control-label col-lg-11" style="font-size:small;text-align:left;">8. I declare that the information furnished above is correct. </label>
+					</div>	
+			
+			
+                       <hr style="border: 1px solid blue;">
+					   <div class="form-group">
+                     <p><b>Note: After submitting the online application, please take a printout, get it signed by Head of the Department/Centre and submit same to DORA Office.</b></p>
+                        </div>      
+                      
+                      <div class="form-group">
+                        <br>
+                          <div class="col-lg-offset-5 col-lg-7">                                      
+                         
+                            <button class="btn btn-primary sub" style="font-size:15px;height:50px;width:90px;" type=" submit" name="via_save">Save</button> 
+											      
+                             
+                            
+                                                         <<a class="btn btn-default nominee_cancel" type="button">Cancel</a> -->
+                              <!--<input type="button" id="show_d" name="show_d" value="Submit" onclick="show_data()" class="btn btn-info">-->
+                            
+
+<!-- 
+
+                          </div>
+                       </div>
+					  
+
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+           -->
+      
+                          
+       
+
+
+<!-- Modal -->
+ <!--  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+    Modal content-->
+    <!--   <div class="modal-content" style="width:850px;">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Print Preview</h4>
+        </div>
+        <div class="modal-body">
+          <html lang="en">
+
+ <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> --> 
+<!--   
+  <head>
+
+ 
+  <script src="../../kendo.cdn.telerik.com/2016.3.914/js/kendo.all.min.js"></script>
+
+<style>
+.wrapper {
+        text-align: left;
+    }
+    .wrapper ul {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        /* For IE, the outcast */
+        zoom:1;
+        *display: inline;
+        list-style: none;
+    }
+    .wrapper li {
+        float: left;
+        padding: 2px 5px;
+	div {
+  font-family: Arial;
+}
+
+</style>
+
+
+
+</head>
+ -->
+
+<!-- <body>
+  <br/>
+  <a href="login/login.html" target="_blank"> <img src="edit.png">&nbsp; Login here to edit application</a><br><br>
+  
+  <button style="float:right;" class="btn btn-primary" onclick="generatePDF()"><i class="fa fa-save"></i> Download PDF</button>
+ <div style="text-align:center"> <a href="http://localhost/login/login.php"><img src="edit.png"> Edit the application by using login credentials..</a> </div>-->
+<!--   <br/><br />
+
+ -->
+    
+
+
+
+<!-- <script src="../../cdnjs.cloudflare.com/ajax/libs/rasterizehtml/1.3.0/rasterizeHTML.allinone.js"></script>
+<script src="js/html2canvas.js"></script>
+
+<script src="../../cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+  <script src="../../cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.debug.js"></script>
+<script src="../../cdnjs.cloudflare.com/ajax/libs/jspdf/0.9.0rc1/jspdf.min.js"></script> 
+ -->
+
+
+<!--Require field ---------------------------------------------------------------------->
+<!-- <link rel="stylesheet" href="../../jqueryvalidation.org/files/demo/site-demos.html">
+
+<script src="../../code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="js/require_valid.js"></script>
+<script src="../../cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+
+
+<br />
+<b>Warning</b>:  Undefined array key "empcode" in <b>C:\xampp\htdocs\fac_via\register_fac_via.php</b> on line <b>55</b><br />
+	 -->
+	
+
+
+	
+	
+  <!-- <div id="formConfirmation" style="font-size:13px;">
+
+    <div class="container theme-showcase" role="main"> -->
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+	 <!--  <font face="Times New Roman" >	
+      <div class="jumbotron" style="width:800px">
+        
+		
+		<br />
+<b>Warning</b>:  Undefined array key "empcode" in <b>C:\xampp\htdocs\fac_via\register_fac_via.php</b> on line <b>77</b><br />
+
+<html>
+
+
+
+No result found	
+		
+      </div>
+	  </font>
+     /.col-sm-4 -->
+<!--       </div>
+    </div>
+</body>
+ --> 
+
+<!-- Mirrored from awards.iitr.ac.in/fac_via/faculty_via.php by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 06 Jun 2021 06:35:00 GMT -->
+<!-- </html>
+
+
+
+
+<script>
+var generatePDF = function() {
+  kendo.drawing.drawDOM($("#formConfirmation")).then(function(group) {
+    kendo.drawing.pdf.saveAs(group, "http://awards.iitr.ac.in/alumni/awards.php");
+  });
+}
+</script> -->
+
+<!-- 
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+ -->
+				
+
+<script>
+
+  // function show_data(){
+	
+
+
+		
+		
+  //       var empcode = document.getElementById("empcode").value;	
+  //       var s_date = document.getElementById("s_date").value;	
+  //       var e_date = document.getElementById("e_date").value;
+
+		// //var empcode = 55555;
+  //       var dataString = 'empcode=' + empcode + '&s_date=' +s_date + '&e_date=' +e_date;
+  //       jQuery.ajax({
+  //           url: "register_via.php",
+  //           data: dataString,
+  //           type: "POST",
+  //           success: function(data){ 
+		// 		alert(empcode);			
+		// 					 $("[style]").removeAttr("style");
+  //       $("#upload_div").html(data);
+		// 		$('#show_d').remove();
+		// 		//$("#form_shw").visibility.remove();
+		// 		$('p').remove();
+		// 		$('#psd').show();   
+  //           },
+  //           error: function (){}
+
+  //       });
+  //   return true;
+	
+
+  //   }
+
+
+
+
+
+
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+
+
+
+
+
+
+ <!--    </div> --> <!-- /container -->
+	<!-- </div>
+	<br><br> -->
+    <!-- <script type="text/javascript" src="http://awards.iitr.ac.in/internship/js/jquery.js"></script> -->
+    <!--<script src="http://awards.iitr.ac.in/internship/js/jquery-1.11.3.min.js"></script>-->
+<!--     <script src="../internship/js/jquery-ui-1.10.4.min.js"></script>
+
+    <script src="../internship/js/underscore-min.js"></script> -->
+    <!-- <script src="http://awards.iitr.ac.in/internship/js/moment.min.js"></script> -->
+    
+    
+<!--     
+    <script src="../internship/js/bootstrap.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.2/moment.min.js"></script>
+    <script src="../internship/js/clndr.js"></script>
+    <script src="../internship/js/event.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="../internship/assets/ckeditor/ckeditor.js"></script>
+    <script type="text/javascript" src="../internship/js/jquery.validate.min.js"></script> -->
+    <!-- <script type="text/javascript" src="http://awards.iitr.ac.in/internship/js/nominee-form-validation-script.js"></script>
+    <script type="text/javascript" src="http://awards.iitr.ac.in/internship/js/nominator-form-validation-script.js"></script> -->
+   
+   <!--  <script type="text/javascript" src="../internship/js/scholarship-form-validation-script.js"></script>
+    <script type="text/javascript" src="../internship/js/login-form-validation-script.js"></script>
+    <script>  -->
+
+      <!-- var $myGroup = $('#myGroup');
+      $myGroup.on('show.bs.collapse','.collapse', function() {
+          $myGroup.find('.collapse.in').collapse('hide');          
+      });
+      $('.nominee_cancel').click(function(){
+          //alert('ddd');
+      });   
+        
+      function validatePhotoExtension(fld){          
+        if(fld.files[0].size > 204800) {
+            alert("Please upload file less than 200 KB. Thanks!!");
+            $('#sig_photo').val('');
+            fld.focus();        
+            return false;
+        }  
+        if(!/(\.png|\.gif|\.jpg|\.jpeg)$/i.test(fld.value)) {
+            alert("File must be Jpg, Gif or Png");              
+            $('#sig_photo').val('');
+            fld.focus();        
+            return false;   
+        }  
+      }
+      function validateProjectExtension(fld){
+    
+        if(!/(\.pdf)$/i.test(fld.value)) {
+            alert("File must be Pdf");      
+            $('#project_upload').val('');
+            fld.focus();        
+            return false;   
+        }  
+      }   
+      // function validateFileExtension(fld){
+    
+      //   if(!/(\.pdf)$/i.test(fld.value)) {
+      //       alert("File must be Pdf");      
+      //       $('#file_upload').val('');
+      //       $('#file2_upload').val('');
+      //       $('#file3_upload').val('');
+      //       $('#file4_upload').val('');
+      //       $('#file5_upload').val('');
+      //       $('#file6_upload').val('');
+      //       $('#file7_upload').val('');
+      //       $('#file8_upload').val('');
+      //       // $('#file6_upload').val('');
+      //       fld.focus();        
+      //       return false;   
+      //   }  
+      // }
+      // function validateResumeExtension2(fld){
+      //   if(!/(\.pdf)$/i.test(fld.value)) {
+      //       alert("File must be Pdf");      
+      //       $('#nominee_career_award_file').val('');
+      //       fld.focus();        
+      //       return false;   
+      //   }  
+      // }
+      // function validateResumeExtension3(fld){
+      //   if(!/(\.pdf)$/i.test(fld.value)) {
+      //       alert("File must be Pdf");      
+      //       $('#nominee_summary_file').val('');
+      //       fld.focus();        
+      //       return false;   
+      //   }  
+      // }
+      // function countChar(val) {
+      //   var len = val.value.length;
+      //   if (len > 1500) {
+      //       val.value = val.value.substring(0, 1500);
+      //   } else {
+      //       $('#charNum').text(1500 - len);
+      //   }
+      // }   
+     
+      // function contribute(val) {
+      //   var len = val.value.length;
+      //   if (len > 10000) {
+      //       val.value = val.value.substring(0, 10000);
+      //   } else {
+      //       $('#contributeNum').text(10000 - len);
+      //   }
+      // } 
+      // function blinker() {
+      //   $('.blink_me').fadeOut(1000);
+      //   $('.blink_me').fadeIn(1000);
+      // }
+      // setInterval(blinker, 2000);
+
+
+        // $(document).ready(function () {
+        //     var counter = 1;
+        //     $("#addrow").on("click", function () {
+        //         var newRow = $("<tr>");
+        //         var cols = "";                
+        //         cols += '<td><input type="text" class="form-control" name="mem_name[' + counter + ']" /></td>';
+        //         cols += '<td><input type="text" class="form-control" name="mem_mail[' + counter + ']"/></td>';                
+        //         cols += '<td><input type="text" class="form-control" name="mem_phone[' + counter + ']"/></td>';
+        //         cols += '<td><input type="button" class="ibtnDel btn btn-md btn-danger "  value="Delete"></td>';
+                
+        //         newRow.append(cols);
+        //         $("table.order-list").append(newRow);
+        //         counter++;
+               
+        //     });
+        //     $("table.order-list").on("click", ".ibtnDel", function (event) {
+        //         $(this).closest("tr").remove();       
+        //         counter -= 1
+        //     });
+
+        // });
+        
+
+        //     $('#nominee_career_award_file').hide();
+        //     $('#nominee_career_award_txt').attr("required", "true");
+        //     $('.nominee_career_file').click(function(){
+        //         $('#nominee_career_award_file').show();
+        //         $('#nominee_career_award').hide();                 
+        //         $('#nominee_career_award_file').attr("required", "true");  
+        //         $('#nominee_career_award_txt').attr("required", "false"); 
+        //     });
+        //     $('.nominee_career_text').click(function(){
+        //         $('#nominee_career_award_file').hide();
+        //         $('#nominee_career_award').show(); 
+        //         $('#nominee_career_award_file').attr("required", "false");  
+            //     $('#nominee_career_award_txt').attr("required", "true");             
+            // });
+
+            // $('#nominee_summary_file').hide();
+            // $('#nominee_summary_txt').attr("required", "true");
+            // $('.nominee_summary_file').click(function(){
+            //     $('#nominee_summary_file').show();
+            //     $('#nominee_summary').hide();                 
+            //     $('#nominee_summary_file').attr("required", "true");  
+            //     $('#nominee_summary_txt').attr("required", "false"); 
+            // });
+            // $('.nominee_summary_text').click(function(){
+            //     $('#nominee_summary_file').hide();
+            //     $('#nominee_summary').show(); 
+            //     $('#nominee_summary_file').attr("required", "false");  
+            //     $('#nominee_summary_txt').attr("required", "true");             
+            // });
+
+
+
+        // $(".datepicker1").datetimepicker({
+        //     format: 'DD-MM-YYYY'
+        // });
+        // $("#nominee_photo").on('change', function() {
+        //     if (typeof(FileReader) == "undefined") {
+        //         alert("Your browser doesn't support HTML5, Please upgrade your browser");
+        //     } else {
+        //         var container = $("#image-container");            
+        //         container.empty();
+        //         //create instance of FileReader
+        //         var reader = new FileReader();
+        //         reader.onload = function(e) {
+        //             $("<img />", {  
+        //             "src": e.target.result,
+        //             "width": '70px',
+        //             }).appendTo(container);
+        //         }                
+        //         reader.readAsDataURL($(this)[0].files[0]);
+        //     }
+        // });
+
+     
+
+
+        // function statusChange(){            
+        //     if ($('#status').is(':checked')) {                
+        //         $('#status').val('1');
+        //         $('.sub').text('Submit');
+        //     }else{
+        //         $('#status').val('0');
+        //         $('.sub').text('Save');
+        //     }    
+
+        // }
+        
+       
+
+
+        // $(document).ready(function(){
+        //     $(".accordion-2 h1").click(function(){
+        //         var id = this.id;   /* getting heading id */
+
+        //         /* looping through all div which have class .accordion-content */
+        //         $(".accordion-content").each(function(){
+        //             if($("#"+id).next()[0].id != this.id){
+        //                 $(this).slideUp("slow");
+        //             }
+        //         });
+        //         $(this).next().toggle("slow");  /* Selecting div after h1 */
+        //     });
+        // });
+            
+        // $(document).ready(function(){
+            
+        //     // var crt_cgpa = $('#crt_cgpa').val();
+        //     // if(crt_cgpa!=''){
+        //     //     $('.jee').hide(); 
+        //     //     $('.cgpa').show();
+        //     // }else{
+        //     //     $('.jee').show(); 
+        //     //     $('.cgpa').hide();
+        //     // }
+        //     var start_year = $('#start_year').val();
+        //     if(start_year=='2' || start_year=='3' || start_year=='4'  || start_year=='5'){
+        //         $('.jee').hide(); 
+        //         $('.cgpa').show();
+        //     }else if(start_year=='1'){
+        //         $('.jee').show(); 
+        //         $('.cgpa').hide();
+        //     }
+        //     var start_year = $('.start_year').val();
+        //     if(start_year!=''){               
+        //         $('.start_year').attr('readonly','true');
+        //     }
+        // });
+
+        // $('.jee').hide(); 
+        // $('.cgpa').hide();
+        // $(".start_year").change(function(){            
+        //     var val = this.value;
+        //     if(val=='1'){
+        //         $('.jee').show(); 
+        //         $('.cgpa').hide();
+        //     }else if(val=='2' || val=='3' || val=='4' || val=='5'){
+        //         $('.jee').hide(); 
+        //         $('.cgpa').show();
+        //     }else{
+        //         $('.jee').hide(); 
+        //         $('.cgpa').hide();
+        //     }
+        // });
+
+//for word limiting in texarea//////////////////////////////////////////////////////////////////
+ // $(document).ready(function() {
+ //    $("#writeup").on('keyup', function() {
+ //        var words = this.value.match(/\S+/g).length;
+ //        if (words > 200) {
+ //            // Split the string on first 200 words and rejoin on spaces
+ //            var trimmed = $(this).val().split(/\s+/, 200).join(" ");
+ //            // Add a space at the end to keep new typing making new words
+ //            $(this).val(trimmed + " ");
+ //        }
+ //        else {
+ //            $('#display_count').text(words);
+ //            $('#word_left').text(200-words);
+ //        }
+ //    });
+ // }); 
+/////////////////////////////////////////////////////////////////////////////////////////
+ -->
+  
+<!-- 
+    </script> -->
+   
+    <!-- <div class=" footer">
+
+    </div> -->
+    <!-- <footer class="container-fluid bg-4 text-center"> -->
+  
+    <!-- <p>Contact information: <a href="mailto:someone@example.com">someone@example.com</a>.</p> -->
+       <!--  <div>All Rights Reserved -  SCSP Office Indian Institute of Technology, Roorkee <a href="https://alumni.iitr.ac.in/institute/aboutdoras"  target="_blank">Designed and Developed by DORA Office  </a></div>  -->
+        <!-- <a href="http://localhost:1234/scholarship/contactt.php" target="_blank">Contact Us</a> -->
+ <!--             
+    </footer>
+  </body>
+</html>
